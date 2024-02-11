@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: 01fc3043acaea47c48cbd83257fdd452
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: body_businessman
+    100004: body_chef
+    100006: body_firefighter
+    100008: body_gang
+    100010: body_helmet
+    100012: body_hoodie
+    100014: body_police
+    100016: body_rocker
+    100018: body_skirtgirl
+    100020: body_tuxedo
+    100022: Bone
+    100024: //RootNode
+    400000: Armature
+    400002: body_businessman
+    400004: body_chef
+    400006: body_firefighter
+    400008: body_gang
+    400010: body_helmet
+    400012: body_hoodie
+    400014: body_police
+    400016: body_rocker
+    400018: body_skirtgirl
+    400020: body_tuxedo
+    400022: Bone
+    400024: //RootNode
+    2100000: body_rocker
+    2100002: skin
+    2100004: body_police
+    2100006: skirtgirl
+    2100008: body_hoodie
+    2100010: body_firefighter
+    2100012: body_helmet
+    2100014: body_gang
+    2100016: body_chef
+    2100018: body_businessman
+    4300000: body_rocker
+    4300002: body_police
+    4300004: body_skirtgirl
+    4300006: body_hoodie
+    4300008: body_firefighter
+    4300010: body_helmet
+    4300012: body_tuxedo
+    4300014: body_chef
+    4300016: body_businessman
+    4300018: body_gang
+    7400000: fall backward
+    7400002: fall forward
+    7400004: fall to the left
+    7400006: fall to the right
+    7400008: idle
+    7400010: jump01_short
+    7400012: jump02_middle
+    7400014: jump03_long
+    7400016: jump05_combination
+    7400018: walk
+    7400020: run
+    7400022: jump04_spin
+    7400024: default
+    7400026: yes
+    7400028: no
+    9500000: //RootNode
+    13700000: body_businessman
+    13700002: body_chef
+    13700004: body_firefighter
+    13700006: body_gang
+    13700008: body_helmet
+    13700010: body_hoodie
+    13700012: body_police
+    13700014: body_rocker
+    13700016: body_skirtgirl
+    13700018: body_tuxedo
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body_businessman
+    second: {fileID: 2100000, guid: 3738b22e04103403b88c63fd1034ff04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body_chef
+    second: {fileID: 2100000, guid: 0c6876943491b49e19dcc76453c41cb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body_firefighter
+    second: {fileID: 2100000, guid: 826678a8ba7e343f0bc84bc55a8b99ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body_gang
+    second: {fileID: 2100000, guid: 4d3ab9adad7d743c6b735f670c2ac5b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body_helmet
+    second: {fileID: 2100000, guid: 671ab661cb8724207afb782bd76ec0b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body_hoodie
+    second: {fileID: 2100000, guid: a6d1c2d3687084dc494b5cf7d1e95dea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body_police
+    second: {fileID: 2100000, guid: 31f46eda8f0db44a28f6c1b06d22ecf7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body_rocker
+    second: {fileID: 2100000, guid: f70f109287687464994d11db6835d680, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {fileID: 2100000, guid: 0127f674bab8144b294f4762743091a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skirtgirl
+    second: {fileID: 2100000, guid: 986914419e9f948bab52e5a63e09696f, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
