@@ -13,45 +13,40 @@ MonoBehaviour:
   m_Name: Bloom
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
-  threshold:
-    m_OverrideState: 1
-    m_Value: 1
-    min: 0
-  intensity:
-    m_OverrideState: 1
-    m_Value: 1
-    min: 0
-  scatter:
-    m_OverrideState: 0
-    m_Value: 0.7
-    min: 0
-    max: 1
-  clamp:
-    m_OverrideState: 0
-    m_Value: 65472
-    min: 0
-  tint:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 1
-  highQualityFiltering:
-    m_OverrideState: 0
-    m_Value: 0
   skipIterations:
     m_OverrideState: 0
     m_Value: 1
-    min: 0
-    max: 16
+  threshold:
+    m_OverrideState: 1
+    m_Value: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 1
+  scatter:
+    m_OverrideState: 0
+    m_Value: 0.7
+  clamp:
+    m_OverrideState: 0
+    m_Value: 65472
+  tint:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  highQualityFiltering:
+    m_OverrideState: 0
+    m_Value: 0
+  downscale:
+    m_OverrideState: 0
+    m_Value: 0
+  maxIterations:
+    m_OverrideState: 0
+    m_Value: 6
   dirtTexture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
+    dimension: 1
   dirtIntensity:
     m_OverrideState: 0
     m_Value: 0
-    min: 0
 --- !u!114 &-7011558710299706105
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -65,29 +60,208 @@ MonoBehaviour:
   m_Name: Vignette
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
   color:
     m_OverrideState: 0
     m_Value: {r: 0, g: 0, b: 0, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 1
   center:
     m_OverrideState: 0
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
     m_Value: 0.25
-    min: 0
-    max: 1
   smoothness:
     m_OverrideState: 1
     m_Value: 0.4
-    min: 0.01
-    max: 1
   rounded:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &-2645738503051091475
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f53d442396c644b198ad641a34212ce, type: 3}
+  m_Name: GlobalIllumination
+  m_EditorClassIdentifier: 
+  active: 1
+  indirectIntensity:
+    m_OverrideState: 1
+    m_Value: 1
+  indirectDistanceAttenuation:
+    m_OverrideState: 0
+    m_Value: 0
+  indirectMaxSourceBrightness:
+    m_OverrideState: 0
+    m_Value: 8
+  normalMapInfluence:
+    m_OverrideState: 0
+    m_Value: 1
+  rayBounce:
+    m_OverrideState: 0
+    m_Value: 0
+  lumaInfluence:
+    m_OverrideState: 1
+    m_Value: 2
+  nearFieldObscurance:
+    m_OverrideState: 1
+    m_Value: 3
+  nearFieldObscuranceSpread:
+    m_OverrideState: 1
+    m_Value: 0.213
+  nearFieldObscuranceMaxCameraDistance:
+    m_OverrideState: 0
+    m_Value: 125
+  nearFieldObscuranceOccluderDistance:
+    m_OverrideState: 0
+    m_Value: 0.825
+  nearFieldObscuranceTintColor:
+    m_OverrideState: 0
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  virtualEmitters:
+    m_OverrideState: 1
+    m_Value: 1
+  organicLight:
+    m_OverrideState: 0
+    m_Value: 0
+  organicLightThreshold:
+    m_OverrideState: 0
+    m_Value: 0.5
+  organicLightSpread:
+    m_OverrideState: 0
+    m_Value: 0.98
+  organicLightNormalsInfluence:
+    m_OverrideState: 0
+    m_Value: 0.95
+  organicLightTintColor:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  organicLightAnimationSpeed:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  organicLightDistanceScaling:
+    m_OverrideState: 0
+    m_Value: 0
+  rayCount:
+    m_OverrideState: 1
+    m_Value: 1
+  rayMaxLength:
+    m_OverrideState: 1
+    m_Value: 8
+  rayMaxSamples:
+    m_OverrideState: 1
+    m_Value: 24
+  rayJitter:
+    m_OverrideState: 1
+    m_Value: 0.1
+  thickness:
+    m_OverrideState: 1
+    m_Value: 1
+  rayBinarySearch:
+    m_OverrideState: 1
+    m_Value: 1
+  fallbackReuseRays:
+    m_OverrideState: 1
+    m_Value: 1
+  rayReuse:
+    m_OverrideState: 1
+    m_Value: 1
+  fallbackReflectionProbes:
+    m_OverrideState: 0
+    m_Value: 0
+  probesIntensity:
+    m_OverrideState: 0
+    m_Value: 1
+  fallbackReflectiveShadowMap:
+    m_OverrideState: 1
+    m_Value: 1
+  reflectiveShadowMapIntensity:
+    m_OverrideState: 0
+    m_Value: 0.8
+  downsampling:
+    m_OverrideState: 1
+    m_Value: 2
+  raytracerAccuracy:
+    m_OverrideState: 0
+    m_Value: 8
+  smoothing:
+    m_OverrideState: 1
+    m_Value: 3
+  temporalReprojection:
+    m_OverrideState: 1
+    m_Value: 1
+  temporalResponseSpeed:
+    m_OverrideState: 1
+    m_Value: 9
+  temporalCameraTranslationResponse:
+    m_OverrideState: 1
+    m_Value: 100
+  temporalDepthRejection:
+    m_OverrideState: 1
+    m_Value: 1
+  temporalChromaThreshold:
+    m_OverrideState: 1
+    m_Value: 0.25
+  showInEditMode:
+    m_OverrideState: 1
+    m_Value: 1
+  showInSceneView:
+    m_OverrideState: 1
+    m_Value: 1
+  brightnessThreshold:
+    m_OverrideState: 0
+    m_Value: 0
+  brightnessMax:
+    m_OverrideState: 0
+    m_Value: 8
+  specularContribution:
+    m_OverrideState: 0
+    m_Value: 0.75
+  nearCameraAttenuation:
+    m_OverrideState: 0
+    m_Value: 0
+  saturation:
+    m_OverrideState: 0
+    m_Value: 1
+  limitToVolumeBounds:
+    m_OverrideState: 1
+    m_Value: 1
+  stencilCheck:
+    m_OverrideState: 0
+    m_Value: 0
+  stencilValue:
+    m_OverrideState: 0
+    m_Value: 1
+  stencilCompareFunction:
+    m_OverrideState: 0
+    m_Value: 6
+  aoInfluence:
+    m_OverrideState: 1
+    m_Value: 1
+  debugView:
+    m_OverrideState: 0
+    m_Value: 0
+  debugDepthMultiplier:
+    m_OverrideState: 0
+    m_Value: 10
+  compareMode:
+    m_OverrideState: 1
+    m_Value: 0
+  compareSameSide:
+    m_OverrideState: 1
+    m_Value: 1
+  comparePanning:
+    m_OverrideState: 0
+    m_Value: 0.25
+  compareLineAngle:
+    m_OverrideState: 0
+    m_Value: 1.4
+  compareLineWidth:
+    m_OverrideState: 0
+    m_Value: 0.002
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,6 +278,7 @@ MonoBehaviour:
   - {fileID: 849379129802519247}
   - {fileID: -7893295128165547882}
   - {fileID: -7011558710299706105}
+  - {fileID: -2645738503051091475}
 --- !u!114 &849379129802519247
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -117,7 +292,30 @@ MonoBehaviour:
   m_Name: Tonemapping
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
   mode:
     m_OverrideState: 1
+    m_Value: 2
+  neutralHDRRangeReductionMode:
+    m_OverrideState: 0
+    m_Value: 2
+  acesPreset:
+    m_OverrideState: 0
+    m_Value: 3
+  hueShiftAmount:
+    m_OverrideState: 0
+    m_Value: 0
+  detectPaperWhite:
+    m_OverrideState: 0
+    m_Value: 0
+  paperWhite:
+    m_OverrideState: 0
+    m_Value: 300
+  detectBrightnessLimits:
+    m_OverrideState: 0
     m_Value: 1
+  minNits:
+    m_OverrideState: 0
+    m_Value: 0.005
+  maxNits:
+    m_OverrideState: 0
+    m_Value: 1000

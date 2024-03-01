@@ -20,12 +20,17 @@ MonoBehaviour:
   jittering: 1
   dithering: 0.5
   useBlueNoise: 0
+  animatedBlueNoise: 1
   renderQueue: 3101
   sortingLayerID: 0
   sortingOrder: 0
   flipDepthTexture: 0
   alwaysOn: 0
   castDirectLight: 0
+  directLightMultiplier: 1
+  directLightSmoothSamples: 8
+  directLightSmoothRadius: 4
+  directLightBlendMode: 0
   autoToggle: 0
   distanceStartDimming: 70
   distanceDeactivation: 100
@@ -38,15 +43,18 @@ MonoBehaviour:
   density: 0.5
   mediumAlbedo: {r: 1, g: 1, b: 1, a: 1}
   brightness: 0.6
-  attenuationMode: 0
+  attenuationMode: 1
   attenCoefConstant: 1
   attenCoefLinear: 2
   attenCoefQuadratic: 1
   rangeFallOff: 1
   diffusionIntensity: 5
-  penumbra: 1
+  penumbra: 0.002
   tipRadius: 0.1
   cookieTexture: {fileID: 0}
+  cookieScale: {x: 1, y: 1}
+  cookieOffset: {x: 0, y: 0}
+  cookieSpeed: {x: 0, y: 0}
   frustumAngle: 0
   windDirection: {x: 0.03, y: 0.02, z: 0}
   enableDustParticles: 0
@@ -57,10 +65,12 @@ MonoBehaviour:
   dustDistanceAttenuation: 10
   dustAutoToggle: 0
   dustDistanceDeactivation: 70
+  dustPrewarm: 1
   enableShadows: 1
   shadowIntensity: 0.9
   shadowTranslucency: 0
   shadowTranslucencyIntensity: 1
+  shadowTranslucencyBlend: 0.5
   shadowResolution: 1024
   shadowCullingMask:
     serializedVersion: 2

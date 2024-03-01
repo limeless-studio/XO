@@ -314,7 +314,7 @@ namespace VolumetricLights {
                         EditorGUI.indentLevel--;
                     }
                     break;
-                case LightType.Area:
+                case LightType.Rectangle:
                 case LightType.Disc:
                     EditorGUILayout.PropertyField(frustumAngle);
                     break;
@@ -393,7 +393,7 @@ namespace VolumetricLights {
                 if (useCustomSize.boolValue) {
                     EditorGUI.indentLevel++;
                     switch (vl.lightComp.type) {
-                        case LightType.Area:
+                        case LightType.Rectangle:
                             EditorGUILayout.PropertyField(areaWidth, new GUIContent("Width"));
                             EditorGUILayout.PropertyField(areaHeight, new GUIContent("Height"));
                             break;
